@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Navigation</title>
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Header */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Main Container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main Cards */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Sub-cards */
+.sub-cards {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.card:hover .sub-cards {
+  display: flex;
+}
+
+.sub-cards a {
+  text-decoration: none;
+  color: #555;
+  padding: 5px;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sub-cards a:hover {
+  background-color: #d1d1d1;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Exercise Navigation</h1>
+  </header>
+  <div class="container">
+    <!-- Exercise 1 -->
+    <div class="card">
+      <h2>Exercise 1</h2>
+      <div class="sub-cards">
+        <a href="./ex-1/solution-1.html">Solution 1</a>
+        <a href="./ex-1/solution-2.html">Solution 2</a>
+        <a href="./ex-1/solution-3.html">Solution 3</a>
+      </div>
+    </div>
+
+    <!-- Exercise 2 -->
+    <div class="card">
+      <h2>Exercise 2</h2>
+      <div class="sub-cards">
+        <a href="./ex-2/solution-1.html">Solution 1</a>
+        <a href="./ex-2/solution-2.html">Solution 2</a>
+        <a href="./ex-2/solution-3.html">Solution 3</a>
+      </div>
+    </div>
+
+    <!-- Exercise 3 -->
+    <div class="card">
+      <h2>Exercise 3</h2>
+      <div class="sub-cards">
+        <a href="./ex-3/solution-1.html">Solution 1</a>
+        <a href="./ex-3/solution-2.html">Solution 2</a>
+        <a href="./ex-3/solution-3.html">Solution 3</a>
+      </div>
+    </div>
+
+    <!-- Exercise 4 -->
+    <div class="card">
+      <h2>Exercise 4</h2>
+      <div class="sub-cards">
+        <a href="./ex-4/solution-1.html">Solution 1</a>
+        <a href="./ex-4/solution-2.html">Solution 2</a>
+        <a href="./ex-4/solution-3.html">Solution 3</a>
+      </div>
+    </div>
+
+    <!-- Exercise 5 -->
+    <div class="card">
+      <h2>Exercise 5</h2>
+      <div class="sub-cards">
+        <a href="./ex-5/solution-1.html">Solution 1</a>
+        <a href="./ex-5/solution-2.html">Solution 2</a>
+        <a href="./ex-5/solution-3.html">Solution 3</a>
+      </div>
+    </div>
+
+    <!-- Exercise 6 -->
+    <div class="card">
+      <h2>Exercise 6</h2>
+      <div class="sub-cards">
+        <a href="./ex-6/solution-1.html">Solution 1</a>
+        <a href="./ex-6/solution-2.html">Solution 2</a>
+        <a href="./ex-6/solution-3.html">Solution 3</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
 
