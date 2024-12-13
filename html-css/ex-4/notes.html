@@ -1,0 +1,9 @@
+Percentage (%): Used to set the width of the .content block in Level 1 to ensure responsiveness. The content width is relative to the parent container, which helps adjust the layout based on the screen size.
+
+Viewport Units (vh, vw): These units are based on the viewport size. vh is 1% of the height of the viewport, and vw is 1% of the width. In Level 1, 50vw and 50vh center the content, ensuring it adjusts to different screen sizes.
+
+min(), max(), and clamp(): These functions are helpful for creating scalable, fluid layouts. min() ensures the size doesn’t grow beyond a specified value, max() ensures it doesn’t shrink below a minimum value, and clamp() combines both to set a range (as demonstrated in Level 2 for font sizes and content widths).
+
+Flexible Grids: In Level 3, the layout is made responsive with CSS Grid. The grid-template-columns property uses minmax() to create flexible columns, and auto-fill automatically adjusts the number of columns based on the screen size.
+
+Fluid Typography: In Level 3, the font size is set to a percentage of the viewport width (3vw), which scales the text size according to the screen width, ensuring readability on different devices.
