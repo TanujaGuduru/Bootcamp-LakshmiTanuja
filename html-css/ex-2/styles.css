@@ -1,0 +1,64 @@
+body {
+    font-size: var(--body-font-size);
+    margin: var(--margin-spacing);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--margin-spacing);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--margin-spacing);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: var(--margin-spacing);
+    text-align: left;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    margin: var(--margin-spacing) 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Theme switcher */
+body.light-mode {
+    --primary-color: #f0f0f0;
+    --secondary-color: #d0d0d0;
+    color: black;
+}
+body.dark-mode {
+    --primary-color: #333333;
+    --secondary-color: #555555;
+    color: white;
+}
