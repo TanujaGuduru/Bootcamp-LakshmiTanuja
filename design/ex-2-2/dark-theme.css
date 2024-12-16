@@ -1,0 +1,13 @@
+/* Dark theme overrides */
+:root {
+    --primary: #00bfff; /* Deep sky blue */
+    --secondary: #ff4500; /* Orange red */
+    --background: #121212; /* Dark background */
+    --text-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--text-color);
+  }
+  

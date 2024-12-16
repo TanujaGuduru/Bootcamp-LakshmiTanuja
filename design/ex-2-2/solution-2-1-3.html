@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Color Scheme with Accent Color</title>
+    <style>
+        /* Base Colors */
+        :root {
+            --base-color-blue: #0066cc;  /* Blue */
+            --complementary-color-orange: #ff6600; /* Orange */
+            --accent-color-green: #66cc33;  /* Green accent color */
+            --light-blue: rgba(0, 102, 204, 0.1); /* Light blue for background */
+            --light-orange: rgba(255, 102, 0, 0.1); /* Light orange for accents */
+            --dark-blue: #003366;  /* Dark blue for text and borders */
+            --dark-orange: #cc5200; /* Dark orange for headings */
+            --dark-green: #338833; /* Dark green for text and buttons */
+        }
+
+        /* Body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: var(--dark-blue); /* Dark blue text for contrast */
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--dark-orange); /* Dark orange for headings */
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: var(--light-blue); /* Light blue background */
+            border: 2px solid var(--dark-blue); /* Dark blue border for contrast */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 20px auto;
+            color: var(--dark-blue); /* Dark blue text inside card */
+        }
+
+        .card h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--dark-orange); /* Dark orange for card title */
+        }
+
+        .card p {
+            font-family: 'Geist-Regular', sans-serif;
+            color: #444;
+        }
+
+        .card .highlight {
+            font-family: 'Geist-Bold', sans-serif;
+            color: var(--complementary-color-orange); /* Highlight text in orange */
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color-green); /* Green button background */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: var(--dark-green); /* Darker green on hover */
+        }
+
+        /* Links */
+        a {
+            color: var(--accent-color-green); /* Accent color for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--dark-green); /* Dark green on hover */
+        }
+
+        /* Typography Adjustments */
+        h1 {
+            font-size: 3em;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+        }
+
+        .lead {
+            font-size: 1.2em;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .shadow-text {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Centering the card container */
+        .container {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        /* Contrast Text */
+        .contrast-text {
+            background-color: var(--complementary-color-orange); /* Background in orange */
+            color: white; /* White text for contrast */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Three-Color Scheme with an Accent Color</h1>
+        
+        <p class="lead">This page demonstrates the use of a three-color scheme, combining blue, orange, and green. The accent green color is applied to links, buttons, and certain text elements to enhance contrast and visual appeal.</p>
+
+        <!-- Card Design -->
+        <div class="card">
+            <h2>Card Title</h2>
+            <p>This card uses a complementary color scheme with blue and orange, and an accent green color is added to the design for buttons, links, and highlights.</p>
+            <p class="highlight">Highlighted text within the card uses the complementary orange color to create contrast and grab attention.</p>
+            <a href="#" class="btn">Click Me</a>
+        </div>
+
+        <h2>Typography Hierarchy</h2>
+        <p>The use of a three-color scheme (blue, orange, and green) creates clear visual differentiation and adds variety to the design. The green accent color provides a fresh pop against the complementary blue and orange colors.</p>
+
+        <h3>Card Example</h3>
+        <p>This card showcases the three-color scheme in action. Notice how the blue, orange, and green work together to create clear contrast between different sections of the page.</p>
+
+        <p>In this design, we've used the **light blue** for the background, **dark blue** for text and borders, and **orange** for accents. The **green** is used for the buttons, links, and highlighted text, drawing the user's attention to important elements.</p>
+
+        <div class="contrast-text">This is an example of high contrast text with a background in orange and text in white. It helps the message stand out more clearly.</div>
+
+    </div>
+
+</body>
+</html>

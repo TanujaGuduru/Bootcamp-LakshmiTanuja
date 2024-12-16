@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fonts and Text Effects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Playfair+Display&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Google Fonts */
+        body {
+            font-family: 'Roboto', sans-serif; /* Sans-serif for body text */
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif; /* Serif for headings */
+        }
+
+        code {
+            font-family: 'Source Code Pro', monospace; /* Monospace for code */
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        /* Variable font: Dynamically adjust weight of Roboto */
+        .variable-font-weight {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 200; /* Lighter weight */
+        }
+        .variable-font-weight:hover {
+            font-weight: 800; /* Heavier weight on hover */
+        }
+
+        /* Drop cap effect */
+        .drop-cap::first-letter {
+            font-size: 3em;
+            font-weight: bold;
+            float: left;
+            margin-right: 10px;
+            line-height: 1;
+        }
+
+        /* Text shadow effect */
+        .text-shadow {
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Large Heading with image mask */
+        .image-mask {
+            font-size: 5em;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            color: transparent;
+            background-image: url('https://via.placeholder.com/800x400');
+            background-size: cover;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        /* General container for content */
+        .container {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Google Fonts and Text Effects Demo</h1>
+
+        <h2>1. Using Google Fonts (Roboto, Playfair Display, and Source Code Pro)</h2>
+        <p>We are using <strong>Roboto</strong> for the body text, <strong>Playfair Display</strong> for headings, and <strong>Source Code Pro</strong> for code. All of these fonts are from Google Fonts, providing web-friendly typefaces.</p>
+
+        <h2>2. Variable Font Weight Demonstration</h2>
+        <p class="variable-font-weight">This text uses the <strong>Roboto</strong> font with a variable weight. Hover over this text to see the weight change dynamically.</p>
+
+        <h2>3. Drop Cap Effect</h2>
+        <p class="drop-cap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+
+        <h2>4. Text Shadow Effect</h2>
+        <p class="text-shadow">This text has a subtle text shadow effect applied to it. Shadows are great for creating a 3D effect or making the text stand out against its background.</p>
+
+        <h2>5. Large Heading with Image Masking</h2>
+        <h1 class="image-mask">Heading with Image Mask</h1>
+        <p>In this section, the heading text is large and the background image shows through the text itself. This effect is achieved using the <code>background-clip: text</code> property.</p>
+    </div>
+
+    
+
+</body>
+</html>

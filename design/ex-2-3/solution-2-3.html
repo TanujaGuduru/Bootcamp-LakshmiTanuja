@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Navigation Bar</title>
+  <style>
+    /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #008fd1;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 70%;
+}
+
+/* Navigation items */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.nav-item span {
+  font-size: 14px;
+}
+
+.nav-item:hover {
+  color: #f1c40f;
+  transform: scale(1.1);
+}
+
+/* Button group styles */
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f1c40f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.btn:hover {
+  background-color: #d4ac0d;
+  transform: scale(1.05);
+}
+
+/* Consistent alignment for all icons */
+.nav-item i,
+.btn-icon {
+  vertical-align: middle;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Navigation icons with labels -->
+    <div class="nav-item">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-info-circle"></i>
+      <span>About</span>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </div>
+    <!-- Buttons with SVG icons -->
+    <div class="button-group">
+      <button class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="btn-icon">
+          <path fill="currentColor" d="M5 20h14v-2H5v2zM12 4l-7 7h4v6h6v-6h4l-7-7z"/>
+        </svg>
+        Download
+      </button>
+      <button class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="btn-icon">
+          <path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+        </svg>
+        Upload
+      </button>
+    </div>
+  </nav>
+</body>
+</html>

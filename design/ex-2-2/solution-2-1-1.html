@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monochromatic Card Design</title>
+    <style>
+        /* Base Color */
+        :root {
+            --base-color: #0066cc; /* A shade of blue as the base color */
+        }
+
+        /* Body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--base-color);
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: rgba(0, 102, 204, 0.1); /* Light blue background with alpha */
+            border: 1px solid rgba(0, 102, 204, 0.3); /* Blue border with alpha */
+            box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2); /* Shadow with alpha for subtle effect */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .card h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-family: 'Geist-Regular', sans-serif;
+            color: #444;
+        }
+
+        .card .highlight {
+            font-family: 'Geist-Bold', sans-serif;
+            color: var(--base-color); /* Highlight text in base color */
+        }
+
+        /* Typography Adjustments */
+        h1 {
+            font-size: 3em;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+        }
+
+        .lead {
+            font-size: 1.2em;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .shadow-text {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Centering the card container */
+        .container {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Monochromatic Theme with a Card</h1>
+        
+        <p class="lead">This page demonstrates the use of a monochromatic theme based on a base color (blue). The card design stands out with subtle alpha channel effects applied to the background, border, and shadow.</p>
+
+        <!-- Card Design -->
+        <div class="card">
+            <h2>Card Title</h2>
+            <p>This is a card component that uses a light blue background, blue border, and a shadow with alpha transparency to create a subtle and modern design.</p>
+            <p class="highlight">Notice how the highlight text stands out in the base color (blue).</p>
+        </div>
+
+        <h2>Typography Hierarchy</h2>
+        <p>The card and typography elements in this design follow a monochromatic theme with blue as the base color. This color is applied across the page with different opacities for various UI components.</p>
+
+        <h3>Card Example</h3>
+        <p>This example illustrates how a card with a monochromatic color palette can stand out with different alpha-channel-based styles (background, border, and shadow).</p>
+
+        <p>By using varying levels of transparency in the card's background, border, and shadow, we can create a visually appealing layout that doesn't overwhelm the content but still emphasizes it effectively.</p>
+    </div>
+
+</body>
+</html>

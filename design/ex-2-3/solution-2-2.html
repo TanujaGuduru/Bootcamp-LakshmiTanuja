@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Icon Grid</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.icon-grid i,
+.icon-grid svg {
+  font-size: 50px;
+  color: #3498db; /* Default color */
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-grid svg {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-grid i:hover,
+.icon-grid svg:hover {
+  color: #e74c3c; /* Hover color */
+  transform: scale(1.2); /* Scaling effect */
+}
+
+  </style>
+</head>
+<body>
+  <div class="icon-grid">
+    <!-- Font Awesome Icons -->
+    <i class="fas fa-home"></i>
+    <i class="fas fa-user"></i>
+    
+    <!-- Inline SVG replacing one Font Awesome icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+      <path fill="currentColor" d="M12 2L2 7v6c0 5.55 3.84 10.74 10 13 6.16-2.26 10-7.45 10-13V7l-10-5zM12 20.5a9.58 9.58 0 0 1-8-9.4V8.3l8-4 8 4v2.8a9.58 9.58 0 0 1-8 9.4z"/>
+    </svg>
+
+    <!-- Inline SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+      <path fill="currentColor" d="M20.71 18.29l-3.39-3.39A7.93 7.93 0 1 0 12 20a7.93 7.93 0 0 0 3.9-1.02l3.39 3.39a1 1 0 0 0 1.42-1.42zM12 18a6 6 0 1 1 6-6 6 6 0 0 1-6 6z"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+      <path fill="currentColor" d="M12 0L9.09 6H0l7.46 5.42L4.91 24 12 18.54 19.09 24l-2.55-12.58L24 6h-9.09z"/>
+    </svg>
+
+    <!-- Font Awesome Icon -->
+    <i class="fas fa-envelope"></i>
+  </div>
+</body>
+</html>

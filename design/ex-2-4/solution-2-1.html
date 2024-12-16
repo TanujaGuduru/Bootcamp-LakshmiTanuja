@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .image-gallery {
+            display: flex;
+            gap: 20px;
+        }
+        .image-gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <img src="https://picsum.photos/300/200?random=1" alt="Random Image 1">
+        <img src="https://picsum.photos/300/200?random=2" alt="Random Image 2">
+        <img src="https://picsum.photos/300/200?random=3" alt="Random Image 3">
+    </div>
+</body>
+</html>

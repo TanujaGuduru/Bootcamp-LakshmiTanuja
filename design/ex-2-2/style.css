@@ -1,0 +1,72 @@
+:root {
+    /* Default to light theme */
+    --primary: #1e90ff; /* Light blue */
+    --secondary: #ff6347; /* Tomato */
+    --background: #ffffff; /* White background */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--secondary);
+  }
+  
+  /* Image and overlay styling */
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary);
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .swatch {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .swatch span {
+    display: block;
+    margin-top: 10px;
+  }
+  

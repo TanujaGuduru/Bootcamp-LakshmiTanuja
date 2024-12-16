@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Weight Demo</title>
+    <style>
+        /* Applying system fonts and defining font weights */
+        body {
+            font-family: Arial, sans-serif; /* System font: Arial */
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .normal-weight {
+            font-weight: normal; /* Normal weight */
+        }
+        .bold-weight {
+            font-weight: bold; /* Bold weight */
+        }
+        .light-weight {
+            font-weight: lighter; /* Light weight */
+        }
+        .extra-bold {
+            font-weight: 900; /* Extra bold weight */
+        }
+
+        .info {
+            font-family: "Times New Roman", serif; /* System font: Times New Roman */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="normal-weight">This text uses normal font weight (Arial)</h1>
+    <p class="bold-weight">This is bold weight (Arial)</p>
+    <p class="light-weight">This is light weight (Arial)</p>
+    <p class="extra-bold">This is extra bold weight (Arial)</p>
+
+    <div class="info">
+        <h2>Font Weights Info</h2>
+        <p>The weights above demonstrate different font weights applied to text in Arial.</p>
+    </div>
+
+    <script>
+        // JavaScript to change font weight dynamically on button click
+        function changeFontWeight() {
+            const paragraph = document.getElementById('dynamic-text');
+            paragraph.style.fontWeight = paragraph.style.fontWeight === 'bold' ? 'normal' : 'bold';
+        }
+    </script>
+
+    <button onclick="changeFontWeight()">Toggle Bold Weight</button>
+    <p id="dynamic-text">This paragraph's font weight will change when you click the button.</p>
+
+</body>
+</html>

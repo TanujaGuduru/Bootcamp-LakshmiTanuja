@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Font and Typography Hierarchy</title>
+    <style>
+        /* Importing custom Geist font locally */
+        @font-face {
+            font-family: 'Geist-Regular';
+            src: url('Geist-Regular.woff2') format('woff2'), url('Geist-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Geist-Bold';
+            src: url('Geist-Bold.woff2') format('woff2'), url('Geist-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* Typography hierarchy */
+        body {
+            font-family: 'Roboto', sans-serif; /* Default font for body text */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Geist-Bold', sans-serif; /* Bold custom font for headers */
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+        }
+
+        h3 {
+            font-size: 2em;
+            line-height: 1.4;
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: 'Geist-Regular', sans-serif; /* Regular custom font for body text */
+            font-size: 1em;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        code {
+            font-family: 'Source Code Pro', monospace;
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        /* Adjusting paragraph spacing */
+        .lead {
+            font-size: 1.2em;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            font-family: 'Geist-Bold', sans-serif;
+            color: #333;
+        }
+
+        /* Text shadow effect */
+        .shadow-text {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Typographic Hierarchy with Custom Font: Geist</h1>
+
+    <p class="lead">In this demonstration, we're showcasing the use of custom font families for different elements like headers and body text, along with adjustments to line height, letter spacing, and other typography properties to create a clear typographic hierarchy.</p>
+
+    <h2>Body Text Styled with Custom Geist Font</h2>
+    <p>This text is using the regular weight of the Geist font for body content. Notice how the font size and line height work together to create comfortable reading space between lines.</p>
+
+    <h3>Subheading (H3)</h3>
+    <p class="highlight">This is a subheading with a larger font size to differentiate it from the main body text. It also has a slight increase in line height and spacing for better readability in smaller sections.</p>
+
+    <h2>What We're Looking At</h2>
+    <p>This page is designed with the intention of illustrating the impact of font choices on readability and design. Notice how the headings stand out from the body text, and how spacing between the lines and the letter-spacing adjustments make the text more legible. The use of custom fonts such as Geist allows for even more control over the text's visual hierarchy.</p>
+
+    <h3>Code Example</h3>
+    <p>Below is an example of using code within text, which is styled with a monospace font to distinguish it from the rest of the content:</p>
+    <code>const font = 'Geist';</code>
+
+    <h2>Typography Adjustments</h2>
+    <p class="shadow-text">This paragraph demonstrates a subtle text shadow effect, which creates a slight 3D effect and makes the text more visually appealing.</p>
+
+    <h1 class="shadow-text">Big Heading with Shadow</h1>
+    <p>The large heading is designed with a shadow effect that makes it stand out from the background.</p>
+
+</body>
+</html>
